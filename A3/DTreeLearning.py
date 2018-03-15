@@ -39,6 +39,7 @@ class node():
 
 		return temp
 
+#from textbook
 def deciciontreelearning(examples, attributes, parent_examples, importance_choose):
 	if not examples:
 		return node(pluralityvalue(parent_examples))
@@ -61,7 +62,7 @@ def deciciontreelearning(examples, attributes, parent_examples, importance_choos
 			tree.children[v] = subtree
 	return tree
 
-
+#from textbook
 def entropy(info, attribute):
 	pos = 0
 	if len(info) == 0:
@@ -84,7 +85,7 @@ def importance(info, attributes):
 			chosenattribute = e
 	return chosenattribute
 
-
+#from textbook
 def B(q):
 	if q == 0 or q == 1:
 		return q
