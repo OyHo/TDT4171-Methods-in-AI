@@ -7,8 +7,8 @@ from drawtree import draw_bst
 import array
 
 target = -1
-check = "test.txt"
-train = "training.txt"
+check = "data/test.txt"
+train = "data/training.txt"
 
 
 class node():
@@ -68,7 +68,7 @@ def entropy(info, attribute):
 	if len(info) == 0:
 		return 0
 	for i in info:
-		if i[attribute] == info[0][attribute]: #positive attribute
+		if i[attribute] == info[0][attribute]:
 			pos+=1
 	return B(pos/len(info))
 
